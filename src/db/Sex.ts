@@ -25,4 +25,11 @@ export default {
         defaultValue: "",
         allowNull: false
     },
+    DTime: {
+        type: DbDataType.datetime,
+        primaryKey: false,
+        autoIncrement: false,
+        defaultValue: "",
+        allowNull: false
+    },
 }

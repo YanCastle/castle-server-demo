@@ -188,14 +188,18 @@ cache-content-type@^1.0.0:
     mime-types "^2.1.18"
     ylru "^1.2.0"
 
-castle-config@^1.0.3:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/castle-config/-/castle-config-1.0.4.tgz#e81a425cb4e5ee1d89e714da9c50be2f3a3324a0"
-  integrity sha512-ep+SzeaKtgpm/Dq8B3CVCyOSW1OtHXjj4XDl2ln/xWxD0Jy/0AAn7EfVW6Xn+jTY9ba2hfKZX38sCvPyWOi5/A==
+castle-config@1.0.*:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/castle-config/-/castle-config-1.0.10.tgz#f0d3f40ab74468df24c752accde03d7a460946d2"
+  integrity sha512-LosHSSRtMBhKcgulm3I+tpr3WkZDSPA6tiGAicX5LmspYEqf4eBRn331A0+849yEft63CDBweA0HRppw1bHIQA==
   dependencies:
     castle-crypto "^1.0.1"
+    castle-hook "^1.0.1"
     castle-utils "^1.0.2"
     koa "^2.6.2"
+    koa-send "^5.0.0"
+    mysql2 "^1.6.4"
+    mz "^2.7.0"
     sequelize "^4.41.2"
 
 castle-config@^1.0.5:
@@ -223,14 +227,14 @@ castle-config@^1.0.6:
     mz "^2.7.0"
     sequelize "^4.41.2"
 
-castle-controller@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/castle-controller/-/castle-controller-1.0.2.tgz#f95322994d843a3a638273877bb257d42fd11f13"
-  integrity sha512-ulGEDVILabxw4juE7Gdm0Y8ug940XrXpms0cfjxYiw7pzfc70EA5hsAkmC3L6xURCdierVtbHWBsSSSbg6fmXw==
+castle-controller@1.0.*:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/castle-controller/-/castle-controller-1.0.9.tgz#cbcd2e085dc514129f07f0cefa4e499d4d78c25a"
+  integrity sha512-1FElJfIKqXULUPZacdVTL9d1LVvaJ9LWPjQBQ86egr9z71nYXokd0V2IhswLIv+9Jd8L9Ys2Rpc7nNUX2oBPFw==
   dependencies:
     "@types/mz" "^0.0.32"
-    castle-model "^1.0.2"
-    castle-relation "^1.0.1"
+    castle-model "1.0.*"
+    castle-relation "1.0.*"
     lodash "^4.17.11"
     mime "^2.4.0"
     mysql2 "^1.6.4"
@@ -255,7 +259,15 @@ castle-hook@^1.0.1:
   resolved "https://registry.yarnpkg.com/castle-hook/-/castle-hook-1.0.1.tgz#336d3ebac6d1565cfe8e2cb78a7a876493da214f"
   integrity sha512-ZEuH9UOrc1xpJ7MVW6u5B6CEq+zExe4wdE4H113TlnYSQcpYiEf9WcNtl5wgb7OpdjEjE5pYg/Q//5qw8oTm5A==
 
-castle-model@^1.0.1, castle-model@^1.0.2:
+castle-model@1.0.*:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/castle-model/-/castle-model-1.0.10.tgz#eb983884cf46ff952a05c8f1dab9a81fe0879e63"
+  integrity sha512-LE+TO60SlorwIO/oHOolCX0A4hpB3UkAuZN7BpZQ959rA9xwxy8XlKP+cQ2fnusORSA97t91z5LB4oSyYmUVGQ==
+  dependencies:
+    lodash "^4.17.11"
+    sequelize "^4.41.2"
+
+castle-model@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/castle-model/-/castle-model-1.0.2.tgz#1a34eafe7dfeb97707acfb5fa9050d45ede91ddb"
   integrity sha512-NtCVWC/s87zvD0QpzGTeKxsrUhVB6RkZFy/W+ju1fKkwHazUfcM1MRQ+e4fUlpLm3M6AOhW26tP4wWqRbrp0lw==
@@ -263,46 +275,29 @@ castle-model@^1.0.1, castle-model@^1.0.2:
     lodash "^4.17.11"
     sequelize "^4.41.2"
 
-castle-model@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/castle-model/-/castle-model-1.0.3.tgz#7f3a6a40ad230c77ce96a5644efc38a062bbe518"
-  integrity sha512-sEnnBksOCWOZk/TgQGv9lbVgUFh0T9yIRMmKV/8gjUOn6oYWPmkAp2kIBreT5Coc/iOgYwCIAcP/XgegQt4ZUw==
-  dependencies:
-    lodash "^4.17.11"
-    sequelize "^4.41.2"
-
-castle-relation@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/castle-relation/-/castle-relation-1.0.1.tgz#d268d6e1cff832841fbb9598fbf5786aa3d3b039"
-  integrity sha512-9NPXH3nJZpIRKxArjhayRGQrVdu44Ovbf/IMIRk7hec41LsFsWFADZ/nL5iSybcoQDEBdmgRb0eLZA2sXs45uA==
+castle-relation@1.0.*:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/castle-relation/-/castle-relation-1.0.4.tgz#e5a6ed7e71e89870ad5edeedc00bdbf09eab96b7"
+  integrity sha512-oUhahcF3UDgWh8NcypX8iZNbcI2Z32K4gg97sSZTyXqafYhOLkz6fGp7Z388601/TpxOB0s0rGwGblUngK7PlA==
   dependencies:
     castle-function "^1.0.1"
     castle-model "^1.0.1"
     lodash "^4.17.11"
 
-castle-relation@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/castle-relation/-/castle-relation-1.0.2.tgz#59023207e6d507e14b5de19b737308665b943041"
-  integrity sha512-vkwamhM3N5/1ysDrq7vJyYdJk6bK8+M92y32l5yeYkrS9sNtuKUN/HsLRVMXgmRXoLZ4/zFayJL1Q7SFCUr/nQ==
-  dependencies:
-    castle-function "^1.0.1"
-    castle-model "^1.0.1"
-    lodash "^4.17.11"
-
-castle-router@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/castle-router/-/castle-router-1.0.1.tgz#67244ed9dd58f7f0337a5397c8f131c5097736ca"
-  integrity sha512-oox46pPl0RMRaeKzeAX1To8X8+Qn5BcSuxtgG4kMWvS4m0b7ESL6nUPWVqXSp3h9ODdGCVgaehnV7Iy9AH83aQ==
+castle-router@1.0.*:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/castle-router/-/castle-router-1.0.5.tgz#d493437fc3d327f7c8c90cf3ae66e7109e6bb9ad"
+  integrity sha512-SEL4MJ5dAcWOCANwTNwTIZ/dRbJEPV3OQ48+XaXMuH75HILkEQt9hU79IterVQvqCPBGMEQm5mwTuVoAdsA3DA==
   dependencies:
     castle-hook "^1.0.1"
     koa-better-http-proxy "^0.2.4"
     lodash "^4.17.11"
     mz "^2.7.0"
 
-castle-server@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/castle-server/-/castle-server-1.0.4.tgz#a31c0aa9ad7dd825b1a98fa12616828af3a43884"
-  integrity sha512-o71hzNXbwdwRmFuQ+srl44LAX2jPSqWUtZTMNS8zd0qvVyGpZNftdA2zdlAtH18YQpKhXwAwxtcBVbnBimLfCQ==
+castle-server@1.0.*:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/castle-server/-/castle-server-1.0.5.tgz#79f0930660b334c3572628aa1fc2adb0f60b77f6"
+  integrity sha512-YGa5QIDPJmlHyDEpNfXG3fOn7Qmpx65I2HuwIgLbM9huAhWsjNCegMN701M1PsNPySSOP48lO7K/7s8COkVgRA==
   dependencies:
     "@types/mz" "^0.0.32"
     chokidar "^2.0.4"
@@ -311,12 +306,12 @@ castle-server@^1.0.4:
     koa2-multiparty "^1.0.1"
     mz "^2.7.0"
 
-castle-session@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/castle-session/-/castle-session-1.0.2.tgz#ba46210323595d193433fcdc5e3a00836fdb7ea0"
-  integrity sha512-XHPXgr0mC1qa4GCT4x60VtKSDXQvK8/y6JENOqWWCJJ8w3I768UGSZqVHRbaOR2jMGAtfZZtuYGuXaxRH1Sx4Q==
+castle-session@1.0.*:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/castle-session/-/castle-session-1.0.4.tgz#958114c784cb812107c45177a50d5a2c2329ad2c"
+  integrity sha512-e28aKQXHV3PTy9AZt+ryCKaCHNFVtqtybZ+23nZSSs1vR3KRKornmvcvqvAbjXvZjrsA2AEURwHG8gWui1+4uw==
   dependencies:
-    castle-config "^1.0.3"
+    castle-config "^1.0.6"
     mz "^2.7.0"
 
 castle-utils@^1.0.2:
