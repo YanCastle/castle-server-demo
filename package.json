@@ -6,14 +6,10 @@
   "author": "CastleMY <490523604@qq.com>",
   "license": "MIT",
   "dependencies": {
-    "castle-config": "1.0.*",
-    "castle-controller": "1.0.*",
-    "castle-model": "1.0.*",
-    "castle-relation": "1.0.*",
-    "castle-router": "1.0.*",
-    "castle-server": "1.0.*",
-    "castle-session": "1.0.*",
-    "chokidar": "^2.0.4",
-    "mysql2": "^1.6.4"
+    "@ctsy/config": "^2.0.8",
+    "@ctsy/controller": "^2.0.10",
+    "@ctsy/router": "^1.0.26",
+    "@ctsy/server": "^1.0.15",
+    "@ctsy/session": "^1.0.8"
   }
 }

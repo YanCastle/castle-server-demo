@@ -1,7 +1,6 @@
-import BaseController from 'castle-controller/dist/base_controller';
+import BaseController from '@ctsy/controller/dist/base_controller';
 import * as Sequelize from 'sequelize';
-import { DbFn } from '../../../castle-model/dist/index';
-import { Fn } from '../../../castle-model/src/index';
+import { DbFn } from '@ctsy/model'
 export default class Test extends BaseController {
     async test() {
         // await timeout(1000)

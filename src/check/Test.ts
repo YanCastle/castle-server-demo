@@ -1,4 +1,4 @@
-import BaseController from "castle-controller/dist/base_controller";
+import BaseController from "@ctsy/controller/dist/base_controller";
 
 export default class Test extends BaseController {
     test() {

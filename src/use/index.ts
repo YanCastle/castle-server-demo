@@ -5,7 +5,7 @@ function timeout(time: number) {
         setTimeout(s, time)
     })
 }
-export async function time(ctx, next) {
+export async function time(ctx: any, next) {
     let r = Math.random() * 1000;
     // await timeout(r)
     // ctx.body = { a: r }

@@ -1,4 +1,4 @@
-import { DbDataType } from 'castle-model/dist/index';
+import { DbDataType } from '@ctsy/model/dist/index';
 
 /**
   * 代理商 Agent

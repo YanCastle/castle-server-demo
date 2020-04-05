@@ -1,4 +1,4 @@
-import DefaultConfig from 'castle-config/dist/index';
+import DefaultConfig from '@ctsy/config/dist/index';
 export default class config extends DefaultConfig {
     async getDbConfig() {
         let r = await super.getDbConfig()
