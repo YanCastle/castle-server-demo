@@ -10,6 +10,7 @@
     "@ctsy/controller": "^2.0.10",
     "@ctsy/router": "^1.0.26",
     "@ctsy/server": "^1.0.15",
-    "@ctsy/session": "^1.0.8"
+    "@ctsy/session": "^1.0.8",
+    "mime": "^2.4.5"
   }
 }
