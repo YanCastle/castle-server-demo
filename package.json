@@ -11,7 +11,6 @@
     "@ctsy/router": "^1.0.26",
     "@ctsy/server": "^1.0.15",
     "@ctsy/session": "^1.0.8",
-    "mime": "^2.4.5",
-    "mine": "^0.1.0"
+    "mime": "^2.4.5"
   }
 }
